@@ -1,6 +1,8 @@
-#include "SmartAudioReaderApp.h"
 
 #include "SmartAudioReaderApp.h"
+#include <iostream>
+#include <string>
+#include <cstdlib>
 
 SmartAudioReader::SmartAudioReader() {
    
@@ -8,8 +10,10 @@ SmartAudioReader::SmartAudioReader() {
 
 void SmartAudioReader::run() {
 
-    string original = reader.readFromFile("test.txt");
-    string simp = simplifier.simplify(original);
-    speaker.speak(simp);
+    string file;
+    cout << "Enter the name of the file you want to simplify: ";
+    getline(cin, file);
 
+    string command = "python3 chatgpt_simplifier.py \"" + file + "\"";
+    system(command.c_str());
 }
