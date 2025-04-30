@@ -1,1 +1,1 @@
-hello i am a test file
+In quantum mechanics, the Heisenberg uncertainty principle states that the more precisely the position of a particle is known, the less precisely its momentum can be known, and vice versa. This intrinsic limitation is not due to measurement errors but arises from the fundamental wave-like nature of particles.
